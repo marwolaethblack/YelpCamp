@@ -17,7 +17,8 @@ var express        = require("express"),
     seedDB         = require("./seeds"); //clears and populates the database
     //seedDB();
     
-mongoose.connect("mongodb://localhost/yelp_camp");
+// mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://YelpCamp:dansko123@ds145659.mlab.com:45659/yelp_camp");
 
 app.set("view engine", "ejs"); //Removes the need to put .ejs at the end of ejs files
 app.use(express.static(__dirname + "/public")); //serves css files
