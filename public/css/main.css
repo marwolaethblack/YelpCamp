@@ -29,6 +29,7 @@ a[href="/campgrounds/new"]:hover {
 .campground-card {
     box-shadow: 4px 4px 4px rgba(0,0,0, 0.5);
     transition: all 0.3s;
+    margin-bottom: 40px;
 }
 
 .campground-card:hover {
