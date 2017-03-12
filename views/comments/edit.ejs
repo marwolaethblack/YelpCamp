@@ -5,13 +5,13 @@
         <h1 style="text-align: center;">Edit comment</h1>
         <form action="/campgrounds/<%= campground_id %>/comments/<%= comment._id%>?_method=PUT" method="POST" style="width: 30%; margin: 25px auto;">
             <div class="form-group">
-                 <input type=text value="<%= comment.text%>" name="comment[text]" class="form-control">
+                <textarea name="comment[text]"  class="form-control" rows=7><%=comment.text%></textarea>
             </div>
             <div class="form-group">
               <button class="btn btn-large btn-default btn-block btn-primary">Edit !</button> 
            </div>
+            <a href="/campgrounds/<%= campground_id%>">Go back</a>
         </form>
-        <a href="/campgrounds/<%= campground_id%>">Go back</a>
     </div>
 </div>
 
